@@ -1,7 +1,7 @@
 # Our Bootleg apps
 PRODUCT_PACKAGES += \
     Etar \
-    GalleryGoPrebuilt \
+    QPGallery \
     MiXplorerPrebuilt \
     WallpaperPicker2 \
     MarkupGugel \
