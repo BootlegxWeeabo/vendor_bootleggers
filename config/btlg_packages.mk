@@ -1,20 +1,23 @@
 # Our Bootleg apps
 PRODUCT_PACKAGES += \
-    Email \
     Etar \
-    QPGallery \
+    GalleryGoPrebuilt \
     MiXplorerPrebuilt \
     WallpaperPicker2 \
     MarkupGugel \
     GugelClock \
     ShishuWalls \
     Jelly \
-    LatinIME \
+    LatinIMEGooglePrebuilt \
     OmniStyle \
     OmniJaws \
     ShishufiedHeaders \
     Phonograph \
     ThemePicker
+
+# Our Weeabo apps
+PRODUCT_PACKAGES += \
+    Nekopoi
 
 ifeq ($(BOOTLEGGERS_BUILD_TYPE),Shishufied)
     PRODUCT_PACKAGES += \

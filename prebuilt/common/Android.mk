@@ -44,12 +44,13 @@ include $(BUILD_PREBUILT)
 #
 #Gallery app
 include $(CLEAR_VARS)
-LOCAL_MODULE := QPGallery
+LOCAL_MODULE := GalleryGoPrebuilt
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_OVERRIDES_PACKAGES := Gallery Gallery2 SnapdragonGallery VanillaGallery
+LOCAL_OVERRIDES_PACKAGES := Gallery Gallery2 Gallery3D Photos GalleryNew3D CameraRoll SnapdragonGallery VanillaGallery
 include $(BUILD_PREBUILT)
 
 #FileManager App
@@ -115,4 +116,15 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+#FileManager App
+include $(CLEAR_VARS)
+LOCAL_MODULE := LatinIMEGooglePrebuilt
+LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_OVERRIDES_PACKAGES := LatinIME LatinIMEGoogle LatinImeGoogle
 include $(BUILD_PREBUILT)
